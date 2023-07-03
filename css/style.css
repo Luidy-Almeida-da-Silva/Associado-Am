@@ -132,7 +132,9 @@ html::-webkit-scrollbar{
     padding-left: 40px;
 }
 .itens a{
-    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(56, 56, 56);
 }
 .title{
     display: flex;
@@ -143,21 +145,16 @@ html::-webkit-scrollbar{
 }
 .title a{
     color: black;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 .lista :nth-child(5){
     border-bottom: 1px solid rgb(196, 196, 196);
 }
-.lista :nth-child(12){
+.lista :nth-child(21){
     border-bottom: 1px solid rgb(196, 196, 196);
 }
-.lista :nth-child(17){
-    border-bottom: 1px solid rgb(196, 196, 196);
-}
-.lista :nth-child(23){
-    border-bottom: 1px solid rgb(196, 196, 196);
-}
+
 .center2{
     padding: 0 2%;
     width: 100vw;
@@ -240,8 +237,86 @@ html::-webkit-scrollbar{
 .fileira li figcaption p{
     font-size: 16px;
 }
+.center3{
+    padding: 0 2%;
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.select{
+    display: flex;
+    box-shadow: 0px 0px 5px rgb(165, 165, 165);
+    border-radius: 10px;
+}
+.select li{
+    width: 70px;
+    height: 70px;
+}
+.select li:nth-child(1){
+    border: 1px solid rgba(0, 0, 0, 0.411);
+    border-radius: 10px 0px 0px 10px;
+}
+.select li:nth-child(11){
+    font-size: 40px;
+}
+.select li:hover{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+.select li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.rodape{
+    padding: 0 2%;
+    width: 100vw;
+    height: 100%px;
+    display: flex;
+    background-color: #131921;
+}
+.informações-rp{
+    padding-top: 20px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.informações-rp h1{
+    font-size: 18px;
+}
+.informações-rp p{
+    color: grey;
+}
+.btn-link{
+    margin: 20px 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(74, 74, 255);
+}
+.informações-rp a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.btn-link:hover{
+    background-color: rgba(74, 74, 255, 0.253);
+    transition: 0.5s;
+}
 @media (min-width: 250px) and (max-width: 900px){
     .center{
+        position: fixed;
         padding: 0 5%;
     }
     .nav-menu{
@@ -256,6 +331,7 @@ html::-webkit-scrollbar{
         position: absolute;
     }
     .center2{
+        margin-top: 80px;
         overflow-x: scroll;
     }
     .lista-bar{
