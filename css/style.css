@@ -29,6 +29,7 @@ html::-webkit-scrollbar{
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
+    overflow: hidden;
 }
 .bars{
     border-radius: 10px;
@@ -239,5 +240,72 @@ html::-webkit-scrollbar{
 .fileira li figcaption p{
     font-size: 16px;
 }
-
+@media (min-width: 250px) and (max-width: 900px){
+    .center{
+        padding: 0 5%;
+    }
+    .nav-menu{
+        width: 10%;
+    }
+    .menu.ativo .lista{
+        width: 100vw;
+    }
+    .navegação.ativo{
+        top: 15px;
+        left: 85vw;
+        position: absolute;
+    }
+    .center2{
+        overflow-x: scroll;
+    }
+    .lista-bar{
+        width: 210vw;
+    }
+    .lista-bar li{
+        height: 40px;
+        display: flex;
+    }
+    .container{
+        padding: 0 2%;
+    }
+    .lista-bar li:not(:first-child){
+        padding-left: 30px;
+    }
+    .fileira{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fileira li{
+        width: 47%;
+        height: auto;
+    }
+}
+@media (width: 280px)and (height: 653px){
+    .logo h1{
+        cursor: default;
+        font-size: 30px;
+    }
+    .nav-menu{
+        width: 15%;
+    }
+    .navegação.ativo{
+        position: absolute;
+        top: 20px;
+        left: 85vw;
+    }
+    .lista{
+        display: none;
+    }
+    .menu.ativo .lista{
+        display: block;
+        width: 100vw;
+    }
+    .lista-bar{
+        width: 270vw;
+    }
+    .fileira li{
+        width: 46%;
+        height: auto;
+    }
+}
 
